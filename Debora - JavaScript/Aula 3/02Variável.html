@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02Variável</title>
+</head>
+<body>
+    <script language = "javascript">
+        
+        // Tipos de dados e variáveis:
+
+        // Inteiros
+        var x = 10; 
+
+        // Ponto flutuante
+        var y = 12.3; 
+
+
+
+        // Booleano
+        // Este tipo de variável só assume dois valores: "true" e "false".
+        // São resultados de comparação e testados de forma lógica.
+        // JavaScript converte "true" em 1 e o "false" em 0.
+        // Exemplo
+
+        var a = 14;
+        var b = 42;
+        var tr = (a == 14);
+        var fl = (a == b);
+        // Nos comandos acima teremos: tr com "true" e fl = "false"
+
+        var int1 = tr+1;
+        var int2 = fl+1;
+        // int1 irá conter o valor 2
+        // int2 irá conter o valor 1
+        // Significa conversão automatica dos valores lógicos true e false.
+
+        
+
+        // String
+        // "Strings" são sequências de caracteres
+        var str = "Esta é uma string";
+        var str2 = 'Esta é outra string';
+
+
+
+        // Arrays/Vetores
+        // É um conjunto de valores autoposicionados ou nomeados
+        // Acessador por um nome, cujo conteúdo é acessado por um índice
+        
+        // Exemplo vazio
+        var arr = new Array(); // Estamos tratando com um objeto
+
+        // Exemplo com elementos
+        var arr = new Array(elem1, elem2);
+        var arr = Array(4);
+
+        // Exemplo com string
+        var arr = new Array("string1", "string2");
+
+        // Outra forma de indicar um array.
+        var arr = [0,1,2,3];
+
+
+
+        // Null
+        // Null é ausência de valor.
+        // Quando atribuímos null a um objeto ou variável, significa
+        // que essa variável não possui um valor válido.
+
+        //Exemplo
+        var vazio = null;
+        var ind;
+        var res = (vazio == ind);
+        var res2 = (vazio === ind);
+        // Quando executarmos vericamos a variável: 
+        // res => terá o valor "true"
+        // rest1 => terá o valor "false"
+        // Se tentarmos imprimir a variável vazio, teremos null impresso
+        // (vazio === ind) é a verificação do tipo de variável também.
+
+
+
+        // Indefinido
+        // Uma variável é indefinida quando ela foi declarada, 
+        // mas não possui nenhum valor concreto armazenado.
+        // Exemplo
+        var marvin;
+        window.alert(marvin);
+        // Quando tentamos imprimir a variável marvin
+        // na janela de alerta será impresso "undefined"
+        // pois não há valor atribuido a esta variável.
+
+        var text = "";
+        // O mesmo não ocorre com a variável text, pois
+        // possui um valor de caractere null e nada será impresso.
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
